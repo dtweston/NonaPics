@@ -1,0 +1,10 @@
+target 'Example-iOS', :exclusive => true do
+  platform :ios, '7.0'
+  pod 'NonaPics', :path => '../'
+end
+
+target 'Example-OSX', :exclusive => true do
+  platform :osx, '10.9'
+  pod 'NonaPics', :path => '../'
+end
+
