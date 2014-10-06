@@ -5,6 +5,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/dtweston/NonaPics"
   s.license          = 'MIT'
   s.author           = { "Dave Weston" => "dave.weston@binocracy.com" }
+  s.social_media_url = 'https://twitter.com/dt_weston'
   s.source           = { :git => "https://github.com/dtweston/NonaPics.git", :tag => s.version.to_s }
   s.requires_arc = true
   s.source_files = 'Pod/Classes'
