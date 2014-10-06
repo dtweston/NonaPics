@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.source_files = 'Pod/Classes'
   s.ios.deployment_target = '7.0'
   s.osx.deployment_target = '10.9'
-  s.prepare_command = 'download_font.sh'
+  s.prepare_command = './download_font.sh'
   s.osx.resource_bundles = {
     'NonaPics-OSX' => ['Pod/Assets/*']
   }
