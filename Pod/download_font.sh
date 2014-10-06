@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/bin/bash
 
-DEST = "Pod/Assets"
+DEST="Pod/Assets"
 
 if [ ! -d "$DEST" ]; then
   mkdir "$DEST"
