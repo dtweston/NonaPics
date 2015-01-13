@@ -241,7 +241,11 @@ static NSDictionary *icons;
 + (NNPImage *)imageWithKey:(NSString *)text params:(NNPIconParameters *)params
 {
 #if TARGET_OS_IPHONE
-    UIGraphicsBeginImageContextWithOptions(CGSizeMake(params.imageSize, params.imageSize), NO, [[UIScreen mainScreen] scale]);
+    CGSize imageSize = CGSizeMake(params.imageSize, params.imageSize);
+    UIGraphicsBeginImageContextWithOptions(imageSize, NO, [[UIScreen mainScreen] scale]);
+    
+    [params.backgroundColor setFill];
+    CGContextFillRect(UIGraphicsGetCurrentContext(), (CGRect){.origin = CGPointZero, .size = imageSize});
     
     NSDictionary *attribs = @{NSFontAttributeName:[UIFont fontWithName:@"octicons" size:params.iconSize], NSForegroundColorAttributeName:params.color};
     CGSize reqSize = [text sizeWithAttributes:attribs];
@@ -251,8 +255,12 @@ static NSDictionary *icons;
     
     return image;
 #else
-    NNPImage *image = [[NNPImage alloc] initWithSize:NSMakeSize(params.imageSize, params.imageSize)];
+    NSSize imageSize = NSMakeSize(params.imageSize, params.imageSize);
+    NNPImage *image = [[NNPImage alloc] initWithSize:imageSize];
     [image lockFocusFlipped:YES];
+    
+    [params.backgroundColor setFill];
+    [NSBezierPath fillRect:(NSRect){.origin = NSZeroPoint, .size = imageSize}];
     
     NSDictionary *attribs = @{NSFontAttributeName:[NSFont fontWithName:@"octicons" size:params.iconSize], NSForegroundColorAttributeName: params.color};
     
