@@ -1,6 +1,6 @@
 # NonaPics
 
-[![CI Status](http://img.shields.io/travis/Dave Weston/NonaPics.svg?style=flat)](https://travis-ci.org/Dave Weston/NonaPics)
+[![CI Status](http://img.shields.io/travis/dtweston/NonaPics.svg?style=flat)](https://travis-ci.org/dtweston/NonaPics)
 [![Version](https://img.shields.io/cocoapods/v/NonaPics.svg?style=flat)](http://cocoadocs.org/docsets/NonaPics)
 [![License](https://img.shields.io/cocoapods/l/NonaPics.svg?style=flat)](http://cocoadocs.org/docsets/NonaPics)
 [![Platform](https://img.shields.io/cocoapods/p/NonaPics.svg?style=flat)](http://cocoadocs.org/docsets/NonaPics)
