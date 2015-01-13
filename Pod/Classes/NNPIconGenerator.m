@@ -16,7 +16,7 @@ static NSDictionary *icons;
 
 @interface NNPIconGenerator ()
 
-@property (nonatomic, strong) NNPIconParameters *params;
+@property (nonatomic, copy) NNPIconParameters *params;
 
 @end
 
