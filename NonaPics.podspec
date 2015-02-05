@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "NonaPics"
-  s.version          = "0.2.0"
+  s.version          = "0.2.1"
   s.summary          = "A simple library to generate images from octicons.ttf"
   s.homepage         = "https://github.com/dtweston/NonaPics"
   s.license          = 'MIT'
