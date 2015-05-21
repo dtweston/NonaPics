@@ -11,7 +11,6 @@
 
 #define NNPColor UIColor
 #define NNPImage UIImage
-#define NNPBundleName @"NonaPics-iOS"
 
 #else
 
@@ -19,6 +18,5 @@
 
 #define NNPColor NSColor
 #define NNPImage NSImage
-#define NNPBundleName @"NonaPics-OSX"
 
 #endif

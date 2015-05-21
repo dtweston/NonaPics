@@ -213,7 +213,7 @@ static NSDictionary *icons;
 
 + (void)loadFont
 {
-    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:NNPBundleName ofType:@"bundle"];
+    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"NonaPics" ofType:@"bundle"];
     
     NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
     NSURL *fontUrl = [bundle URLForResource:@"octicons" withExtension:@"ttf"];
