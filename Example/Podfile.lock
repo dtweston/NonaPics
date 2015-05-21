@@ -1,5 +1,5 @@
 PODS:
-  - NonaPics (0.2.2)
+  - NonaPics (0.2.3)
 
 DEPENDENCIES:
   - NonaPics (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  NonaPics: e7c5ef848cc39a90e4f28dea67df9ac2f8641d40
+  NonaPics: 14bdd83996e5a2ca581bbe89f3a1cbe385842010
 
 COCOAPODS: 0.37.1
