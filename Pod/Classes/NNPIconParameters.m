@@ -47,6 +47,11 @@ static NSDictionary *icons;
 
 @implementation NNPMutableIconParameters
 
+@dynamic iconSize;
+@dynamic imageSize;
+@dynamic color;
+@dynamic backgroundColor;
+
 - (void)setImageSize:(CGFloat)imageSize
 {
     _imageSize = imageSize;
