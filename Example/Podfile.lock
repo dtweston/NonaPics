@@ -6,9 +6,9 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   NonaPics:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  NonaPics: 9206344f0b742e1c1447c5b90f7e179af2469556
+  NonaPics: e7c5ef848cc39a90e4f28dea67df9ac2f8641d40
 
-COCOAPODS: 0.35.0
+COCOAPODS: 0.37.1
